@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sidebar: #202123;
+  --color-main-bg: #F8F6F2;
+  --color-card-bg: #FFFFFF;
+  --color-champagne-gold: #C9A36A;
+  --color-light-gold: #E5D0AB;
+  --color-main-text: #18233F;
+  --color-secondary-text: #7B7D85;
+  --color-success: #15966A;
+  --color-border: #ECE8E1;
+}
+
+@layer base {
+  body {
+    background-color: #F8F6F2;
+    color: #18233F;
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom subtle luxury scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DFBE82;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A36A;
+}
+
+/* Glassmorphism and Luxury Glows */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A47D43 0%, #C9A36A 50%, #DFBE82 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-badge {
+  background: linear-gradient(135deg, #C9A36A 0%, #B89258 100%);
+}
+
+.sidebar-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
